@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+<!--EXTENDER A PÁGINA BASE, só vai mudar o centro-->
+
+{% load static %}
+
+{% block titulo %}
+Index
+{% endblock %}
+
+{% block centro %}
+
+<div class="flex center">
+
+    <!--Lista de resultados-->
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Eleições finalizadas</th>
+                <th scope="col">Vencedor</th> 
+                <th scope="col">Votos</th> 
+                <th scope="col">Segundo Lugar</th> 
+                <th scope="col">Votos</th> 
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="row"></th>
+                <td>Capitão da Equipe 'Eagles FC'</td>
+                <td>Bruno Bastos</td>
+                <td>13</td>
+                <td>André Ferreira</td>
+                <td>9</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}
